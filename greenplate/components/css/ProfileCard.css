@@ -1,0 +1,32 @@
+.profile-card {
+    display: flex;
+    align-items: flex-start; /* Align the items to the top */
+    margin: auto;
+    padding: 2rem 5rem;
+  }
+  
+  .profile-pic-container {
+    text-align: center; /* Center the name under the profile pic */
+    padding-right: 2rem;
+    min-width: 170px;
+    
+  }
+  
+  .profile-pic {
+    width: 100px; /* Set the width of the profile picture */
+    height: 100px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  
+  .name {
+    margin-top: 8px; /* Add some space between the image and the name */
+    font-weight: bolder;
+  }
+  
+  .profile-description {
+    flex: 1; /* Allows the description to fill the remaining horizontal space */
+    padding-top: 10px; /* Optional: aligns top of text with top of image */
+    text-align: left;
+  }
+  

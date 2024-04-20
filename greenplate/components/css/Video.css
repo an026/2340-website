@@ -1,0 +1,12 @@
+.youtube-video-component {
+    margin-bottom: 20px;
+}
+
+iframe {
+    max-width: auto;
+}
+
+  .video-description {
+    margin-top: 2rem;
+  }
+  

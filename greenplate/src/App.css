@@ -1,46 +1,111 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.p-container {
+  max-width: 50%; /* or a specific max-width if needed */
+  margin: 0 auto; /* this centers the container if it has a max-width */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+  width: 100vw; /* This will ensure it takes the full width of the viewport */
+  box-sizing: border-box; /* To include padding in the width if there's any */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding or set it on child elements */
+  overflow-x: hidden; /* Hide horizontal overflow which removes the horizontal scrollbar */
+  justify-content: center;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+/* If you need padding inside the .ui, add a container inside it */
+.heading-content-container {
+  padding: 5rem 0; /* Adjust padding as needed */
+  width: 100%; /* Ensure the container fills the .ui div */
+  max-width: 100%; /* Max width can be adjusted as needed */
+  margin: auto; /* This will center the container */
 }
 
-.card {
-  padding: 2em;
+/* .heading-content-container p {
+  padding-top: 0;
+  margin-top: 0;
 }
 
-.read-the-docs {
-  color: #888;
+heading-content-container h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+} */
+
+.ui {
+  background-color: rgba(232, 233, 234, 0.4);
+  width: 100vw; /* This will ensure it takes the full width of the viewport */
+  box-sizing: border-box; /* To include padding in the width if there's any */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding or set it on child elements */
+  overflow-x: hidden; /* Hide horizontal overflow which removes the horizontal scrollbar */
+  justify-content: center;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
 }
 
-.subheading{
-  margin: -25px 250px;
+
+/* If you need padding inside the .ui, add a container inside it */
+.ui-content-container {
+  padding: 5rem 0; 
+  width: 100%; /* Ensure the container fills the .ui div */
+  max-width: 1280px; /* Max width can be adjusted as needed */
+  margin: auto; /* This will center the container */
 }
+
+.body {
+  width: 100vw; /* This will ensure it takes the full width of the viewport */
+  box-sizing: border-box; /* To include padding in the width if there's any */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding or set it on child elements */
+  overflow-x: hidden; /* Hide horizontal overflow which removes the horizontal scrollbar */
+  justify-content: center;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+
+/* If you need padding inside the .ui, add a container inside it */
+.body-content-container {
+  padding: 5rem 0; 
+  width: 100%; /* Ensure the container fills the .ui div */
+  max-width: 1280px; /* Max width can be adjusted as needed */
+  margin: auto; /* This will center the container */
+}
+
+.body-dark {
+  background-color: rgba(232, 233, 234, 0.4);
+  width: 100vw; /* This will ensure it takes the full width of the viewport */
+  box-sizing: border-box; /* To include padding in the width if there's any */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding or set it on child elements */
+  overflow-x: hidden; /* Hide horizontal overflow which removes the horizontal scrollbar */
+  justify-content: center;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.footer {
+  padding: 2rem 0; 
+  width: 100%; /* Ensure the container fills the .ui div */
+  max-width: 1280px; /* Max width can be adjusted as needed */
+  margin: auto; /* This will center the container */
+}
+
+.footer p {
+  padding: 0;
+  margin: 0;
+}
+
