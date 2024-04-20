@@ -18,7 +18,7 @@ const Video = ({ videoUrl, description }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      {description && <p className="video-description">{description}</p>}
+      <div className='p-container'>{description && <p className="video-description">{description}</p>}</div>
     </div>
   );
 };

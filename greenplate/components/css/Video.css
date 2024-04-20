@@ -10,3 +10,7 @@ iframe {
     margin-top: 2rem;
   }
   
+  .p-container {
+    max-width: 75%; /* or a specific max-width if needed */
+    margin: 0 auto; /* this centers the container if it has a max-width */
+  }

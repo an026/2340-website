@@ -8,32 +8,32 @@ import ProfileCard from "../components/ProfileCard";
 function App() {
   const imageArray = [
     {
-      url: "./src/assets/_ (7).jpeg",
+      url: "Temp.jpeg",
       alt: "Description of image 1",
       description: "This is image 1",
     },
     {
-      url: "./src/assets/_ (7).jpeg",
+      url: "Temp.jpeg",
       alt: "Description of image 2",
       description: "This is image 2",
     },
     {
-      url: "./src/assets/_ (7).jpeg",
+      url: "Temp.jpeg",
       alt: "Description of image 2",
       description: "This is image 3",
     },
     {
-      url: "./src/assets/_ (7).jpeg",
+      url: "Temp.jpeg",
       alt: "Description of image 2",
       description: "This is image 4",
     },
     {
-      url: "./src/assets/_ (7).jpeg",
+      url: "Temp.jpeg",
       alt: "Description of image 2",
       description: "This is image 5",
     },
     {
-      url: "./src/assets/_ (7).jpeg",
+      url: "Temp.jpeg",
       alt: "Description of image 2",
       description: "This is image 6",
     },
@@ -62,7 +62,7 @@ function App() {
           <Video
             videoUrl="https://www.youtube.com/embed/SKqCNqWc8nM?si=InYKl7QeKCENkzIQ"
             description={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              "Delve into the world of sustainable eating with our comprehensive functionality demo of the GreenPlate app. This video walkthrough showcases how our app simplifies tracking your daily food intake, managing your pantry, and planning your shopping with an eye toward sustainability. "
             }
           />
         </div>
@@ -71,7 +71,7 @@ function App() {
         <div className="body-content-container">
           <h2>Domain Model</h2>
           <Image
-            imageUrl="./src/assets/_ (7).jpeg"
+            imageUrl="Temp.jpeg"
             alt="A descriptive text for the image"
             description="Your description for the image here."
           />
@@ -79,7 +79,7 @@ function App() {
           <div style={{ borderBottom: "1px solid #ccc", margin: "5rem" }}></div>
           <h2>System Diagram</h2>
           <Image
-            imageUrl="./src/assets/_ (7).jpeg"
+            imageUrl="Temp.jpeg"
             alt="A descriptive text for the image"
             description="Your description for the image here."
           />
@@ -87,7 +87,7 @@ function App() {
           <div style={{ borderBottom: "1px solid #ccc", margin: "5rem" }}></div>
           <h2>Design Class Diagram</h2>
           <Image
-            imageUrl="./src/assets/_ (7).jpeg"
+            imageUrl="Temp.jpeg"
             alt="A descriptive text for the image"
             description="Your description for the image here."
           />
@@ -112,41 +112,41 @@ function App() {
         <div className="body-content-container">
           <h2>Contributions & Topics Learned</h2>
           <ProfileCard
-            profilePic="./src/assets/AV.png"
+            profilePic="AV.png"
             name="Allison Vu"
             description="This project taught me how to translate client's needs to technical TODOs for my team, roadmap a timeline to ensure we deliver the requirements, and work with my team to identify bottlenecks in the workflow. I used Jira to track Sprint TODOs. I also worked on the front-end (e.g. I created the navigation bar using Fragments, form validation, form-entry modals using Dialogs, and the splash screen), reviewed code + fixed bugs for my team, and created our demo site using React."
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
           <ProfileCard
-            profilePic="./src/assets/AV.png"
+            profilePic="AV.png"
             name="Rhoney Lee"
             description="I learned the importance of communication, how to coordinate meetings, and checked in with my team members frequently. It was my first time using Android Studio, and I learned so much including but not limited to coding JUnits, creating buttons + entry forms, how to use version control, and how to design a Domain Model, Design Class Diagram, + Sequence Digram. I oversaw the design diagrams throughout the semester and updated them each Sprint."
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
           <ProfileCard
-            profilePic="./src/assets/AV.png"
+            profilePic="AV.png"
             name="Keon Sanavandi"
             description="Description"
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
           <ProfileCard
-            profilePic="./src/assets/AV.png"
+            profilePic="AV.png"
             name="Michael Manchiraju"
             description="Description"
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
           <ProfileCard
-            profilePic="./src/assets/AV.png"
+            profilePic="AV.png"
             name="Brendan Thomasson"
             description="Description"
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
           <ProfileCard
-            profilePic="./src/assets/AV.png"
+            profilePic="AV.png"
             name="Seong Won Park"
             description="Description"
           />
