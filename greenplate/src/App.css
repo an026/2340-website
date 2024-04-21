@@ -42,7 +42,7 @@ heading-content-container h1 {
 } */
 
 .ui {
-  background-color: rgba(232, 233, 234, 0.4);
+  background-color: #e8e9ea66;
   width: 100vw; /* This will ensure it takes the full width of the viewport */
   box-sizing: border-box; /* To include padding in the width if there's any */
   margin: 0; /* Remove margins */
@@ -85,7 +85,7 @@ heading-content-container h1 {
 }
 
 .body-dark {
-  background-color: rgba(232, 233, 234, 0.4);
+  background-color: #e8e9ea66;
   width: 100vw; /* This will ensure it takes the full width of the viewport */
   box-sizing: border-box; /* To include padding in the width if there's any */
   margin: 0; /* Remove margins */
