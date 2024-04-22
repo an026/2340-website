@@ -184,7 +184,7 @@ function App() {
           <ProfileCard
             profilePic="KS.jpeg"
             name="Keon Sanavandi"
-            description="I integrated a recipes database and refined data synchronization with Firebase, learning to implement SOLID and GRASP principles for robust back-end functionality. I honed my skills in data validation and structured our database for efficiency, ensuring coding standards with Checkstyle. My work on establishing a meal database and input functionality expanded my understanding of system architecture and user data handling. Through debugging and test development, I've learned to build a more reliable and user-friendly application."
+            description="This project was an interesting dive into programming in a group context, working with others to implement a complex and interconnected app. I took a role in a variety of portions of the app, learning real world database usages through firebase, as well as working to integrate the meals database, ingredients database, shopping list database, and recipes database. In addition, I did a lot of front-end event response work, responding to button clicks and integrating with the databases. In total, this project helped me learn a variety of Agile techniques, and real world programming strategies."
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
