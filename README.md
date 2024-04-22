@@ -1,5 +1,7 @@
 Link: https://gregarious-custard-f1a8bf.netlify.app/
 
+Built with Vite and React. npm run build -> deploy using Netifly
+
 Site Developer - Allison Vu
 
 Introduction & Functionality Video - Rhoney Lee
