@@ -1,24 +1,37 @@
-.image-component {
-    display: flex; /* Use flexbox to align items side by side */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center the items horizontally */
-    margin: 20px 0;
-  }
-  
-  .responsive-image {
-    max-width: 50%; /* Adjust based on your design needs */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove inline-block spacing */
-  }
-  
-  .image-description-container {
-    margin-left: 20px; /* Add some space between the image and the description */
-    text-align: left; /* Align the text to the left */
-    max-width: 50%; /* Adjust based on your design needs */
-  }
-  
-  .image-description {
-    margin-top: 0; /* No need for a top margin if it's next to the image */
-  }
-  
- 
+ .image-component {
+  display: flex;
+  /* Use flexbox to align items side by side */
+  align-items: center;
+  /* Align items vertically */
+  justify-content: center;
+  /* Center the items horizontally */
+  margin: 20px 0;
+}
+
+.responsive-image {
+  max-width: 50%;
+  /* Adjust based on your design needs */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove inline-block spacing */
+}
+
+.image-description-container {
+  margin-left: 20px;
+  /* Add some space between the image and the description */
+  text-align: left;
+  /* Align the text to the left */
+  max-width: 50%;
+  /* Adjust based on your design needs */
+}
+
+.image-description {
+  margin-top: 0;
+  /* No need for a top margin if it's next to the image */
+}
+
+#bigger .responsive-image {
+  max-width: 100%;
+  width: 80vw;
+}

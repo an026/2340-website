@@ -61,7 +61,7 @@ function App() {
       <div className="ui">
         <div className="ui-content-container">
           <Video
-            videoUrl="https://www.youtube.com/embed/SKqCNqWc8nM?si=InYKl7QeKCENkzIQ"
+            videoUrl="https://www.youtube.com/embed/bTOgIGYsCzI?si=uKpIcHJJkeR5UPTL"
             description={
               "Delve into the world of sustainable eating with our comprehensive functionality demo of the GreenPlate app. This video walkthrough showcases how our app simplifies tracking your daily food intake, managing your pantry, and planning your shopping with an eye toward sustainability. "
             }
@@ -72,6 +72,7 @@ function App() {
         <div className="body-content-container">
           <h2>Domain Model</h2>
           <Image
+            id=""
             imageUrl="DomainModel.png"
             alt="A descriptive text for the image"
             description="This domain model represents the classes we have implemented in our app and their respective attributes, offering a comprehensive and easy-to-see view of the structure of our app. Our model consists of a two different 'types' of classes. First, we have the 'entry' type class, or any type of class that can have an instance. This includes the user, recipe, ingredient, and input meal classes, which have individual attributes that depend on user input. The second type of class is the 'database' type class.This includes the user database, meal database, the cookbook (recipes database), the pantry (ingredients database), and the shopping list. These databases are structured using Firebase to store instances of the 'entry' type class accordingly. The domain model shows the relationship between these classes using arrows, multiplicities, and verbs."
@@ -80,24 +81,31 @@ function App() {
           <div style={{ borderBottom: "1px solid #ccc", margin: "5rem" }}></div>
           <h2>System Diagram</h2>
           <Image
+            id=""
             imageUrl="SystemDiagram.png"
             alt="A descriptive text for the image"
-            description="Your description for the image here. A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image"
+            description="The sequence diagram is a model that shows a specific user-system interaction based on one use case. This sequence diagram shows a scenario where a user wants to add an ingredient entry into their pantry. First, the user must use the navigation bar to click on the ingredients section, which is facilitated by Main Activity. From there, the user is able to click the add ingredient button, which calls the addIngredient method, displaying a pop up that allows the user to enter the name, quantity, calories per serving, and expiration date of the ingredient. The system attempts to write this to the ingredient database using Firebase, and this can lead to one of two outcomes: onFail or onSuccess. OnFail is called when adding the ingredient was unsuccessful, due to reasons such as the ingredient being a duplicate, the user entering only whitespace, etc. This will then return an error message to the user describing the issue. OnSuccess is called when adding the ingredient is successful, which then allows the pop up screen to close, and the ingredient to be added to the database."
           />
           <br></br>
           <div style={{ borderBottom: "1px solid #ccc", margin: "5rem" }}></div>
           <h2>Design Class Diagram</h2>
           <Image
+            id=""
             imageUrl="DesignClassDiagram.png"
             alt="A descriptive text for the image"
-            description="Your description for the image here. A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image A descriptive text for the image"
+            description="The Design Class Diagram can be thought of as a more detailed, rigorous extension of the idea of the domain model. In the design class diagram, classes are represented as a box with two sections, the top section being attributes of the class, and the bottom section being methods of the class. The visibility of the attributes and methods are defined by the -, #, or + symbol before them. - represents private, # is protected, and + is public. Defining the visibility in this way provides an easy way to determine how classes are working in interaction with each other. Similar to the domain model, this diagram also uses verbs and multiplicities to describe the relationship, but also includes the directionality. The lines and arrows of the diagram also define the relationship between classes. For example, the dotted open arrow connecting the ingredients database and the ingredients fragment indicates a dependency relationship, while the white diamond arrow from recipes fragment to recipes activity indicates an aggregational relationship. Thus, the DCD provides a comprehensive view into the intricate details of the app's classes."
           />
         </div>
       </div>
       <div className="body-dark">
         <div className="body-content-container">
           <h2>UI Highlights</h2>
-          <Gallery images={imageArray} />
+          <Image
+          id="bigger"
+          imageUrl="UIHighlights.png"
+          alt=""
+          description=""
+          />
         </div>
       </div>
       <div className="body">
@@ -113,7 +121,7 @@ function App() {
             content="The journey began with establishing a solid foundation during Sprint 1. For some of us, it was our first time using Android Studio, running scrum meetings, and using task distribution systems like Jira. We also learned how to implement software architecture structures like Model-View-ViewModel into our code to ensure a streamlined design. Our main goal for Sprint 1 was implementing the general structure of our app by creating diagrams, adding placeholder screens, and setting up the different feature classes such as Ingredients, Recipes, Shopping Cart, Meals, and User Info."
           />
           <CollapsibleCard
-            title="Sprint 2 : Starting to Implement Specific Features"
+            title="Sprint 2 : Implementing Specific Features"
             content='Sprint 2 aimed at enhancing the Input Meals feature, personalizing calorie goals, displaying calorie intake, and integrating data visualization. The objectives were set to create a more interactive and user-friendly experience in tracking daily meals and calorie intake, thereby aligning with our project goal of promoting sustainable eating habits. Our team began implementing the methods and logical components of our app, and engaged in hands-on learning of the refactoring techniques we learned in class to implement the Singleton pattern. We also learned about user-app interactions with Sequence Diagrams, and refined the System Sequence Diagram and Domain Model we created in Sprint 1.'
           />
           <CollapsibleCard
@@ -174,23 +182,25 @@ function App() {
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
           <ProfileCard
-            profilePic="AV.png"
+            profilePic="KS.jpeg"
             name="Keon Sanavandi"
-            description="Description"
+            description="I integrated a recipes database and refined data synchronization with Firebase, learning to implement SOLID and GRASP principles for robust back-end functionality. I honed my skills in data validation and structured our database for efficiency, ensuring coding standards with Checkstyle. My work on establishing a meal database and input functionality expanded my understanding of system architecture and user data handling. Through debugging and test development, I've learned to build a more reliable and user-friendly application."
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
           <ProfileCard
-            profilePic="AV.png"
+            profilePic="MM.jpeg"
             name="Michael Manchiraju"
-            description="Description"
+            description="This project taught me how to translate a client’s needs into specific requirements that our team can implement and develop into a final product. Along this journey, I learned how to utilize the Agile development toolkit, such as sprint planning, scrum, and sprint review meetings, and use tools such as Jira to manage the product backlog. Additionally, I was introduced to the Git version control system and learned how to effectively and efficiently utilize Git to ensure the integrity of our project through suitable employment of Pull Requests and managing merge conflicts using industry-specific best practices. I also worked with the Firebase database management platform and learned to integrate front-end UI elements with the real-time database. I played an essential role as a mediator within our group, ensuring group morale remained high, everyone’s opinions were heard respectfully and professionally, and issues were solved effectively and professionally."
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
           <ProfileCard
-            profilePic="AV.png"
+            profilePic="BT.png"
             name="Brendan Thomasson"
-            description="Description"
+            description="This project had me dive elbows deep into a practical, real-world Agile development environment. I learned how to interface with GitHub - how to coordinate with team members to keep the project modular and operating as its parts were engineered and plugged in. I learned valuable lessons in how best to operate within a group, ensuring my code would assimilate with the others cleanly. 
+            I worked to integrate the front and back-end of the project, polling asynchronous information from Firebase and using it to update scrollable lists, calculate for numeric displays, and build objects. Bugfixing was an endless journey, but that process helped build the skills of reading other's code to gain a wholistic understanding of all the project's moving parts. 
+            Throughout development, I learned the ins-and-outs of Android Studio, including how to make scrollable lists, manipulate individual elements of a list, create buttons, create dialogues, and how to push and pull from Firebase. "
           />
           <div style={{ borderBottom: "1px solid #ccc", margin: "1rem" }}></div>
 
